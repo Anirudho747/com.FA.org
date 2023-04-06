@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="18" time="151.045">
+    <testcase classname="Login" name="We will Test Login Scenarios with wrong username formats" time="10.265">
+        <system-out>
+            <![CDATA[Given User is at Login Page.................................................passed
+When User enters username as "a"............................................passed
+Then User gets a Validation Message for username............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Login" name="We will Test Login Scenarios with wrong username formats 2" time="8.876">
+        <system-out>
+            <![CDATA[Given User is at Login Page.................................................passed
+When User enters username as "a@bcg"........................................passed
+Then User gets a Validation Message for username............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Login" name="We will Test Login Scenarios with wrong username formats 3" time="8.497">
+        <system-out>
+            <![CDATA[Given User is at Login Page.................................................passed
+When User enters username as "@bc"..........................................passed
+Then User gets a Validation Message for username............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Login" name="We will Test Login Scenarios with wrong username formats 4" time="8.152">
+        <system-out>
+            <![CDATA[Given User is at Login Page.................................................passed
+When User enters username as "ab.com".......................................passed
+Then User gets a Validation Message for username............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Login" name="We will Test Login Scenarios with blank password" time="8.248">
+        <system-out>
+            <![CDATA[Given User is at Login Page.................................................passed
+When User enters username as "test@chainsys.com"............................passed
+And User enters blank password..............................................passed
+Then User gets a Validation Message for password............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Login" name="We will Test Login Scenarios with blank password 2" time="8.289">
+        <system-out>
+            <![CDATA[Given User is at Login Page.................................................passed
+When User enters username as "test@"........................................passed
+And User enters blank password..............................................passed
+Then User gets a Validation Message for password............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Login" name="We will Test Login Scenarios with incorrect username and password" time="9.019">
+        <failure message="Unable to locate element: //div[@class='Toastify__toast Toastify__toast-theme--light Toastify__toast--default']&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.8.3', revision: 'e5e76298c3'&#10;System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [985c01b5-9c29-45d5-a0d3-ea262b0f6416, findElement {using=xpath, value=//div[@class='Toastify__toast Toastify__toast-theme--light Toastify__toast--default']}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0.1, moz:accessibilityChecks: false, moz:buildID: 20230321111920, moz:debuggerAddress: 127.0.0.1:5382, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 19.6.0, moz:processID: 1924, moz:profile: /var/folders/_t/wbqmj45978v..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:5382/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 985c01b5-9c29-45d5-a0d3-ea262b0f6416" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given User is at Login Page.................................................passed
+When User enters username as "test@chainsys.com"............................passed
+And User enters password as "<Password>"....................................passed
+Then User should get a Toast notification...................................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@class='Toastify__toast Toastify__toast-theme--light Toastify__toast--default']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '11.0.11'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [985c01b5-9c29-45d5-a0d3-ea262b0f6416, findElement {using=xpath, value=//div[@class='Toastify__toast Toastify__toast-theme--light Toastify__toast--default']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0.1, moz:accessibilityChecks: false, moz:buildID: 20230321111920, moz:debuggerAddress: 127.0.0.1:5382, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 19.6.0, moz:processID: 1924, moz:profile: /var/folders/_t/wbqmj45978v..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:5382/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 985c01b5-9c29-45d5-a0d3-ea262b0f6416
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy26.isDisplayed(Unknown Source)
+	at flows.LoginFlow.isToastPresent(LoginFlow.java:53)
+	at stepDefinition.LoginCases.user_should_get_a_toast_notification(LoginCases.java:59)
+	at ✽.User should get a Toast notification(file:///Users/aubergine/Downloads/com.adminPanel.org/src/test/resources/features/Login.feature:32)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Login" name="We will Test Login Scenarios with incorrect username and password 2" time="8.111">
+        <failure message="Unable to locate element: //div[@class='Toastify__toast Toastify__toast-theme--light Toastify__toast--default']&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.8.3', revision: 'e5e76298c3'&#10;System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [dde85312-321c-4d62-87f5-a1dfdae4f613, findElement {using=xpath, value=//div[@class='Toastify__toast Toastify__toast-theme--light Toastify__toast--default']}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0.1, moz:accessibilityChecks: false, moz:buildID: 20230321111920, moz:debuggerAddress: 127.0.0.1:38791, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 19.6.0, moz:processID: 1944, moz:profile: /var/folders/_t/wbqmj45978v..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:38791/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: dde85312-321c-4d62-87f5-a1dfdae4f613" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given User is at Login Page.................................................passed
+When User enters username as "test10@chainsys.com"..........................passed
+And User enters password as "<Password>"....................................passed
+Then User should get a Toast notification...................................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@class='Toastify__toast Toastify__toast-theme--light Toastify__toast--default']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '11.0.11'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [dde85312-321c-4d62-87f5-a1dfdae4f613, findElement {using=xpath, value=//div[@class='Toastify__toast Toastify__toast-theme--light Toastify__toast--default']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0.1, moz:accessibilityChecks: false, moz:buildID: 20230321111920, moz:debuggerAddress: 127.0.0.1:38791, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 19.6.0, moz:processID: 1944, moz:profile: /var/folders/_t/wbqmj45978v..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:38791/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dde85312-321c-4d62-87f5-a1dfdae4f613
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy26.isDisplayed(Unknown Source)
+	at flows.LoginFlow.isToastPresent(LoginFlow.java:53)
+	at stepDefinition.LoginCases.user_should_get_a_toast_notification(LoginCases.java:59)
+	at ✽.User should get a Toast notification(file:///Users/aubergine/Downloads/com.adminPanel.org/src/test/resources/features/Login.feature:32)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Login" name="We will Test Login Scenarios with correct username and password" time="8.465">
+        <system-out>
+            <![CDATA[Given User is at Login Page.................................................passed
+When User enters username as "anirudho@auberginesolutions.com"..............passed
+And User enters password as "Gmail@2022"....................................passed
+Then User should be redirected to page with title "<Title>".................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Notifications" name="We will Test if counters are working properly for Title and Body" time="8.074">
+        <system-out>
+            <![CDATA[Given User is at Notifications Page.........................................passed
+And counter values are set to default.......................................passed
+When User enters title as "a"...............................................passed
+Then title count is accurate................................................passed
+When User enters body as "This".............................................passed
+Then Body count is accurate.................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Notifications" name="We will Test if counters are working properly for Title and Body 2" time="8.267">
+        <system-out>
+            <![CDATA[Given User is at Notifications Page.........................................passed
+And counter values are set to default.......................................passed
+When User enters title as "The title is"....................................passed
+Then title count is accurate................................................passed
+When User enters body as "This body is".....................................passed
+Then Body count is accurate.................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Notifications" name="We will Test if counters are working properly for Title and Body 3" time="8.212">
+        <system-out>
+            <![CDATA[Given User is at Notifications Page.........................................passed
+And counter values are set to default.......................................passed
+When User enters title as "QA Test Notification"............................passed
+Then title count is accurate................................................passed
+When User enters body as "QA Test Notification".............................passed
+Then Body count is accurate.................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Notifications" name="We will Test if Send button is disabled when screen loads" time="7.945">
+        <system-out>
+            <![CDATA[Given User is at Notifications Page.........................................passed
+When Title is blank.........................................................passed
+And Body Is blank...........................................................passed
+Then Send Button is disabled................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Notifications" name="We will Test if Send button is disabled when Title is Blank" time="7.894">
+        <system-out>
+            <![CDATA[Given User is at Notifications Page.........................................passed
+When Title is blank.........................................................passed
+And Body Is not blank.......................................................passed
+Then Send Button is disabled................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Notifications" name="We will Test if Send button is disabled when Body is Blank" time="7.976">
+        <system-out>
+            <![CDATA[Given User is at Notifications Page.........................................passed
+When Title is not blank.....................................................passed
+And Body Is blank...........................................................passed
+Then Send Button is disabled................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Notifications" name="We will Test if Send button is disabled when Confirmation field is Blank" time="7.628">
+        <system-out>
+            <![CDATA[Given User is at Notifications Page.........................................passed
+When Title is not blank.....................................................passed
+And Body Is blank...........................................................passed
+Then Send Button is disabled................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Notifications" name="We will Test if Send button is enabled when Confirmation field is filled" time="7.768">
+        <system-out>
+            <![CDATA[Given User is at Notifications Page.........................................passed
+When Title is not blank.....................................................passed
+And Body Is not blank.......................................................passed
+Then Send Button is disabled................................................passed
+When Confirmation field is updated..........................................passed
+Then Send Button is enabled.................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Notifications" name="We will Test if Toast message appears when Notification sent" time="9.067">
+        <system-out>
+            <![CDATA[Given User is at Notifications Page.........................................passed
+When Title is not blank.....................................................passed
+And Body Is not blank.......................................................passed
+And Confirmation field is updated...........................................passed
+And Send Button is clicked..................................................passed
+Then Toast Message appears..................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
