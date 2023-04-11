@@ -6,7 +6,8 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = {"src/test/resources/features"},
+		//ideally for features we should just mention the folder name and control execution via tags, but we can mention individual file as well
+		        features = {"src/test/resources/features/Login","src/test/resources/features/Login2"},
 				glue = {"stepDefinition"},
 		        plugin= {
 				"pretty",
