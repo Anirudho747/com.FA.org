@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="18" time="151.045">
-    <testcase classname="Login" name="We will Test Login Scenarios with wrong username formats" time="10.265">
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="18" time="169.138">
+    <testcase classname="Login" name="We will Test Login Scenarios with wrong username formats" time="10.08">
         <system-out>
             <![CDATA[Given User is at Login Page.................................................passed
 When User enters username as "a"............................................passed
@@ -8,7 +8,7 @@ Then User gets a Validation Message for username............................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Login" name="We will Test Login Scenarios with wrong username formats 2" time="8.876">
+    <testcase classname="Login" name="We will Test Login Scenarios with wrong username formats 2" time="12.447">
         <system-out>
             <![CDATA[Given User is at Login Page.................................................passed
 When User enters username as "a@bcg"........................................passed
@@ -16,7 +16,7 @@ Then User gets a Validation Message for username............................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Login" name="We will Test Login Scenarios with wrong username formats 3" time="8.497">
+    <testcase classname="Login" name="We will Test Login Scenarios with wrong username formats 3" time="11.688">
         <system-out>
             <![CDATA[Given User is at Login Page.................................................passed
 When User enters username as "@bc"..........................................passed
@@ -24,7 +24,7 @@ Then User gets a Validation Message for username............................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Login" name="We will Test Login Scenarios with wrong username formats 4" time="8.152">
+    <testcase classname="Login" name="We will Test Login Scenarios with wrong username formats 4" time="8.856">
         <system-out>
             <![CDATA[Given User is at Login Page.................................................passed
 When User enters username as "ab.com".......................................passed
@@ -32,7 +32,7 @@ Then User gets a Validation Message for username............................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Login" name="We will Test Login Scenarios with blank password" time="8.248">
+    <testcase classname="Login" name="We will Test Login Scenarios with blank password" time="12.792">
         <system-out>
             <![CDATA[Given User is at Login Page.................................................passed
 When User enters username as "test@chainsys.com"............................passed
@@ -41,7 +41,7 @@ Then User gets a Validation Message for password............................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Login" name="We will Test Login Scenarios with blank password 2" time="8.289">
+    <testcase classname="Login" name="We will Test Login Scenarios with blank password 2" time="12.179">
         <system-out>
             <![CDATA[Given User is at Login Page.................................................passed
 When User enters username as "test@"........................................passed
@@ -50,8 +50,8 @@ Then User gets a Validation Message for password............................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Login" name="We will Test Login Scenarios with incorrect username and password" time="9.019">
-        <failure message="Unable to locate element: //div[@class='Toastify__toast Toastify__toast-theme--light Toastify__toast--default']&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.8.3', revision: 'e5e76298c3'&#10;System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [985c01b5-9c29-45d5-a0d3-ea262b0f6416, findElement {using=xpath, value=//div[@class='Toastify__toast Toastify__toast-theme--light Toastify__toast--default']}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0.1, moz:accessibilityChecks: false, moz:buildID: 20230321111920, moz:debuggerAddress: 127.0.0.1:5382, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 19.6.0, moz:processID: 1924, moz:profile: /var/folders/_t/wbqmj45978v..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:5382/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 985c01b5-9c29-45d5-a0d3-ea262b0f6416" type="org.openqa.selenium.NoSuchElementException">
+    <testcase classname="Login" name="We will Test Login Scenarios with incorrect username and password" time="9.054">
+        <failure message="Unable to locate element: //div[@class='Toastify__toast Toastify__toast-theme--light Toastify__toast--default']&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.8.3', revision: 'e5e76298c3'&#10;System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [65a6d354-68fd-4396-b052-0259ef483684, findElement {using=xpath, value=//div[@class='Toastify__toast Toastify__toast-theme--light Toastify__toast--default']}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0.1, moz:accessibilityChecks: false, moz:buildID: 20230321111920, moz:debuggerAddress: 127.0.0.1:10097, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 19.6.0, moz:processID: 3017, moz:profile: /var/folders/_t/wbqmj45978v..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:10097/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 65a6d354-68fd-4396-b052-0259ef483684" type="org.openqa.selenium.NoSuchElementException">
             <![CDATA[Given User is at Login Page.................................................passed
 When User enters username as "test@chainsys.com"............................passed
 And User enters password as "<Password>"....................................passed
@@ -63,9 +63,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.8.3', revision: 'e5e76298c3'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '11.0.11'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [985c01b5-9c29-45d5-a0d3-ea262b0f6416, findElement {using=xpath, value=//div[@class='Toastify__toast Toastify__toast-theme--light Toastify__toast--default']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0.1, moz:accessibilityChecks: false, moz:buildID: 20230321111920, moz:debuggerAddress: 127.0.0.1:5382, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 19.6.0, moz:processID: 1924, moz:profile: /var/folders/_t/wbqmj45978v..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:5382/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 985c01b5-9c29-45d5-a0d3-ea262b0f6416
+Command: [65a6d354-68fd-4396-b052-0259ef483684, findElement {using=xpath, value=//div[@class='Toastify__toast Toastify__toast-theme--light Toastify__toast--default']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0.1, moz:accessibilityChecks: false, moz:buildID: 20230321111920, moz:debuggerAddress: 127.0.0.1:10097, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 19.6.0, moz:processID: 3017, moz:profile: /var/folders/_t/wbqmj45978v..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:10097/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 65a6d354-68fd-4396-b052-0259ef483684
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -83,15 +83,15 @@ Session ID: 985c01b5-9c29-45d5-a0d3-ea262b0f6416
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy26.isDisplayed(Unknown Source)
+	at com.sun.proxy.$Proxy25.isDisplayed(Unknown Source)
 	at flows.LoginFlow.isToastPresent(LoginFlow.java:53)
-	at stepDefinition.LoginCases.user_should_get_a_toast_notification(LoginCases.java:59)
+	at stepDefinition.LoginCases.user_should_get_a_toast_notification(LoginCases.java:71)
 	at ✽.User should get a Toast notification(file:///Users/aubergine/Downloads/com.adminPanel.org/src/test/resources/features/Login.feature:32)
 ]]>
         </failure>
     </testcase>
-    <testcase classname="Login" name="We will Test Login Scenarios with incorrect username and password 2" time="8.111">
-        <failure message="Unable to locate element: //div[@class='Toastify__toast Toastify__toast-theme--light Toastify__toast--default']&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.8.3', revision: 'e5e76298c3'&#10;System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [dde85312-321c-4d62-87f5-a1dfdae4f613, findElement {using=xpath, value=//div[@class='Toastify__toast Toastify__toast-theme--light Toastify__toast--default']}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0.1, moz:accessibilityChecks: false, moz:buildID: 20230321111920, moz:debuggerAddress: 127.0.0.1:38791, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 19.6.0, moz:processID: 1944, moz:profile: /var/folders/_t/wbqmj45978v..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:38791/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: dde85312-321c-4d62-87f5-a1dfdae4f613" type="org.openqa.selenium.NoSuchElementException">
+    <testcase classname="Login" name="We will Test Login Scenarios with incorrect username and password 2" time="8.611">
+        <failure message="Unable to locate element: //div[@class='Toastify__toast Toastify__toast-theme--light Toastify__toast--default']&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.8.3', revision: 'e5e76298c3'&#10;System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [33c87e93-723f-48b2-969d-c711eedf05d5, findElement {using=xpath, value=//div[@class='Toastify__toast Toastify__toast-theme--light Toastify__toast--default']}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0.1, moz:accessibilityChecks: false, moz:buildID: 20230321111920, moz:debuggerAddress: 127.0.0.1:15752, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 19.6.0, moz:processID: 3038, moz:profile: /var/folders/_t/wbqmj45978v..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:15752/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 33c87e93-723f-48b2-969d-c711eedf05d5" type="org.openqa.selenium.NoSuchElementException">
             <![CDATA[Given User is at Login Page.................................................passed
 When User enters username as "test10@chainsys.com"..........................passed
 And User enters password as "<Password>"....................................passed
@@ -103,9 +103,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.8.3', revision: 'e5e76298c3'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '11.0.11'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [dde85312-321c-4d62-87f5-a1dfdae4f613, findElement {using=xpath, value=//div[@class='Toastify__toast Toastify__toast-theme--light Toastify__toast--default']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0.1, moz:accessibilityChecks: false, moz:buildID: 20230321111920, moz:debuggerAddress: 127.0.0.1:38791, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 19.6.0, moz:processID: 1944, moz:profile: /var/folders/_t/wbqmj45978v..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:38791/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: dde85312-321c-4d62-87f5-a1dfdae4f613
+Command: [33c87e93-723f-48b2-969d-c711eedf05d5, findElement {using=xpath, value=//div[@class='Toastify__toast Toastify__toast-theme--light Toastify__toast--default']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0.1, moz:accessibilityChecks: false, moz:buildID: 20230321111920, moz:debuggerAddress: 127.0.0.1:15752, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 19.6.0, moz:processID: 3038, moz:profile: /var/folders/_t/wbqmj45978v..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:15752/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 33c87e93-723f-48b2-969d-c711eedf05d5
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -123,14 +123,14 @@ Session ID: dde85312-321c-4d62-87f5-a1dfdae4f613
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy26.isDisplayed(Unknown Source)
+	at com.sun.proxy.$Proxy25.isDisplayed(Unknown Source)
 	at flows.LoginFlow.isToastPresent(LoginFlow.java:53)
-	at stepDefinition.LoginCases.user_should_get_a_toast_notification(LoginCases.java:59)
+	at stepDefinition.LoginCases.user_should_get_a_toast_notification(LoginCases.java:71)
 	at ✽.User should get a Toast notification(file:///Users/aubergine/Downloads/com.adminPanel.org/src/test/resources/features/Login.feature:32)
 ]]>
         </failure>
     </testcase>
-    <testcase classname="Login" name="We will Test Login Scenarios with correct username and password" time="8.465">
+    <testcase classname="Login" name="We will Test Login Scenarios with correct username and password" time="8.664">
         <system-out>
             <![CDATA[Given User is at Login Page.................................................passed
 When User enters username as "anirudho@auberginesolutions.com"..............passed
@@ -139,7 +139,7 @@ Then User should be redirected to page with title "<Title>".................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Notifications" name="We will Test if counters are working properly for Title and Body" time="8.074">
+    <testcase classname="Notifications" name="We will Test if counters are working properly for Title and Body" time="8.978">
         <system-out>
             <![CDATA[Given User is at Notifications Page.........................................passed
 And counter values are set to default.......................................passed
@@ -150,7 +150,7 @@ Then Body count is accurate.................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Notifications" name="We will Test if counters are working properly for Title and Body 2" time="8.267">
+    <testcase classname="Notifications" name="We will Test if counters are working properly for Title and Body 2" time="8.783">
         <system-out>
             <![CDATA[Given User is at Notifications Page.........................................passed
 And counter values are set to default.......................................passed
@@ -161,7 +161,7 @@ Then Body count is accurate.................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Notifications" name="We will Test if counters are working properly for Title and Body 3" time="8.212">
+    <testcase classname="Notifications" name="We will Test if counters are working properly for Title and Body 3" time="8.856">
         <system-out>
             <![CDATA[Given User is at Notifications Page.........................................passed
 And counter values are set to default.......................................passed
@@ -172,7 +172,7 @@ Then Body count is accurate.................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Notifications" name="We will Test if Send button is disabled when screen loads" time="7.945">
+    <testcase classname="Notifications" name="We will Test if Send button is disabled when screen loads" time="8.009">
         <system-out>
             <![CDATA[Given User is at Notifications Page.........................................passed
 When Title is blank.........................................................passed
@@ -181,7 +181,7 @@ Then Send Button is disabled................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Notifications" name="We will Test if Send button is disabled when Title is Blank" time="7.894">
+    <testcase classname="Notifications" name="We will Test if Send button is disabled when Title is Blank" time="7.73">
         <system-out>
             <![CDATA[Given User is at Notifications Page.........................................passed
 When Title is blank.........................................................passed
@@ -190,7 +190,7 @@ Then Send Button is disabled................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Notifications" name="We will Test if Send button is disabled when Body is Blank" time="7.976">
+    <testcase classname="Notifications" name="We will Test if Send button is disabled when Body is Blank" time="7.61">
         <system-out>
             <![CDATA[Given User is at Notifications Page.........................................passed
 When Title is not blank.....................................................passed
@@ -199,7 +199,7 @@ Then Send Button is disabled................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Notifications" name="We will Test if Send button is disabled when Confirmation field is Blank" time="7.628">
+    <testcase classname="Notifications" name="We will Test if Send button is disabled when Confirmation field is Blank" time="7.602">
         <system-out>
             <![CDATA[Given User is at Notifications Page.........................................passed
 When Title is not blank.....................................................passed
@@ -208,7 +208,7 @@ Then Send Button is disabled................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Notifications" name="We will Test if Send button is enabled when Confirmation field is filled" time="7.768">
+    <testcase classname="Notifications" name="We will Test if Send button is enabled when Confirmation field is filled" time="7.5">
         <system-out>
             <![CDATA[Given User is at Notifications Page.........................................passed
 When Title is not blank.....................................................passed
@@ -219,7 +219,7 @@ Then Send Button is enabled.................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Notifications" name="We will Test if Toast message appears when Notification sent" time="9.067">
+    <testcase classname="Notifications" name="We will Test if Toast message appears when Notification sent" time="9.444">
         <system-out>
             <![CDATA[Given User is at Notifications Page.........................................passed
 When Title is not blank.....................................................passed

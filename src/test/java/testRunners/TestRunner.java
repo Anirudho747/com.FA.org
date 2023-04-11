@@ -8,14 +8,16 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features = {"src/test/resources/features"},
 				glue = {"stepDefinition"},
-		        plugin= {"pretty",
-				"html:html/Reports.html",
-				"json:json/Report.json",
-				"junit:junit/Report.xml",
+		        plugin= {
+//				"pretty",
+//				"html:html/Reports.html",
+//				"json:json/Report.json",
+//				"junit:junit/Report.xml",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 		         },
 		        monochrome = false,
-		         dryRun = false
+		         dryRun = false,
+		         publish = true
 		         )
 public class TestRunner {
 

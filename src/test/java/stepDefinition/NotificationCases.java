@@ -18,22 +18,6 @@ public class NotificationCases {
     public DriverFactory df;
     public WebDriver driver;
 
-
-//    public NotificationCases()
-//    {
-//        df = new DriverFactory();
-//        driver = df.get_driver();
-//        nf = new NotificationFlow(driver);
-//        lf = new LoginFlow(driver);
-//
-//        df.launchPage();
-//        System.out.println(driver.getTitle());
-//
-//        lf.enterUserName("anirudho@auberginesolutions.com");
-//        lf.enterPassword("Gmail@2022");
-//        lf.tapLogin_withCorrectEmailFormat();
-//    }
-
     @Before(order=0)
     public void setUp()
     {
