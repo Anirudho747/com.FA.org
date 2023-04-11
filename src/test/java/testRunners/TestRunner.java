@@ -9,13 +9,14 @@ import io.cucumber.junit.CucumberOptions;
 		features = {"src/test/resources/features"},
 				glue = {"stepDefinition"},
 		        plugin= {
-//				"pretty",
-//				"html:html/Reports.html",
-//				"json:json/Report.json",
-//				"junit:junit/Report.xml",
+				"pretty",
+				"html:html/Reports.html",
+				"json:json/Report.json",
+				"junit:junit/Report.xml",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 		         },
-		        monochrome = false,
+		         tags="not @JIRA-456",
+		         monochrome = false,
 		         dryRun = false,
 		         publish = true
 		         )

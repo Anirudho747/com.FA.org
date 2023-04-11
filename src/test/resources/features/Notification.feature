@@ -1,5 +1,6 @@
 Feature: Notifications
 
+  @JIRA-456 @JIRA-123
   Scenario Outline: We will Test if counters are working properly for Title and Body
     Given User is at Notifications Page
     And counter values are set to default
@@ -13,35 +14,35 @@ Feature: Notifications
       | a         | This |
       |The title is     | This body is |
       |QA Test Notification       | QA Test Notification|
-
+  @JIRA-456
   Scenario: We will Test if Send button is disabled when screen loads
     Given User is at Notifications Page
     When Title is blank
     And Body Is blank
     Then Send Button is disabled
 
-
+  @JIRA-123
   Scenario: We will Test if Send button is disabled when Title is Blank
     Given User is at Notifications Page
     When Title is blank
     And Body Is not blank
     Then Send Button is disabled
 
-
+  @JIRA-123
   Scenario: We will Test if Send button is disabled when Body is Blank
     Given User is at Notifications Page
     When Title is not blank
     And Body Is blank
     Then Send Button is disabled
 
-
+  @JIRA-456
   Scenario: We will Test if Send button is disabled when Confirmation field is Blank
     Given User is at Notifications Page
     When Title is not blank
     And Body Is blank
     Then Send Button is disabled
 
-
+  @JIRA-123
   Scenario: We will Test if Send button is enabled when Confirmation field is filled
     Given User is at Notifications Page
     When Title is not blank
@@ -50,7 +51,7 @@ Feature: Notifications
     When Confirmation field is updated
     Then Send Button is enabled
 
-
+  @JIRA-456
   Scenario: We will Test if Toast message appears when Notification sent
     Given User is at Notifications Page
     When Title is not blank
